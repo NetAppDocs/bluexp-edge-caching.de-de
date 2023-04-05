@@ -67,7 +67,7 @@ Stellen Sie sicher, dass die VM-Einstellungen, einschließlich Ressourcenreservi
 ** Passwort: *Tal0nFAST!*
 
 
-. Konfigurieren Sie Ihre Windows Server-VM, fügen Sie sich der Active Directory-Domäne des Unternehmens bei und fahren Sie mit dem Abschnitt Konfiguration des globalen Datei-Cache fort.
+. Konfigurieren Sie Ihre Windows Server-VM, treten Sie der Active Directory-Domäne des Unternehmens bei und fahren Sie mit dem Konfigurationsabschnitt „Global File Cache Edge“ fort.
 
 
 
@@ -131,4 +131,4 @@ Die Installation wird gestartet.
 
 
 .Nächste Schritte
-Weitere Informationen zur erweiterten Konfiguration von Global File Cache Edge finden Sie im https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.1.0%20User%20Guide.pdf["NetApp Global File Cache User Guide"^].
+Weitere Informationen zur erweiterten Konfiguration von Global File Cache Edge finden Sie im https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.2.0%20User%20Guide.pdf["NetApp Global File Cache User Guide"^].

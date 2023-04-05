@@ -25,9 +25,9 @@ Anpassen und Weiterleiten folgender Ressourcen an Endbenutzer zur Vorbereitung d
 * Video zur Benutzerschulunglink:https://www.youtube.com/watch?v=RYvhnTz4bEA["Schulungsvideo für Endbenutzer"^]
 * E-Mail-Vorlagelink:https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%20Onboarding%20Email.emltpl["Mac E-Mail-Vorlage (.emltpl)"]
 +
-link:https://docs.netapp.com/us-en/occm/media/Global_File_Cache_Onboarding_Email.msg["Windows E-Mail-Vorlage (.msg)"]
+link:media/Global_File_Cache_Onboarding_Email.msg["Windows E-Mail-Vorlage (.msg)"]
 
 * Onboarding-Kommunikationlink:https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%20Customer%20Onboarding%20-%20Draft.docx["Word-Dokument (.docx)"]
 
 
-Siehe Kapitel 14 im https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.1.0%20User%20Guide.pdf["NetApp Global File Cache User Guide"^] Für zusätzliches Material.
+Siehe Kapitel 14 im https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.2.0%20User%20Guide.pdf["NetApp Global File Cache User Guide"^] Für zusätzliches Material.

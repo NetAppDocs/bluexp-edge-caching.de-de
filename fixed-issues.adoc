@@ -18,6 +18,17 @@ Lesen Sie, welche Probleme im globalen Datei-Cache behoben wurden.
 
 
 
+== 27. März 2023 (Version 2.2)
+
+* Es wurde ein Problem beim Konvertieren des Zeitformats für die Ausführung eines Jobs vor der Einfüllung für die Option „letzte Änderungszeit“ behoben.
+* Es wurde ein Problem im Zusammenhang mit der Analyse der Dateiübertragung und der Weitergabe an den Cloud Insights-Dienst behoben.
+* Die Edge-Synchronisierung von Dateien aller Abonnenten wird automatisch wieder verbunden, wenn die Verbindung zum Herausgeber getrennt wird.
+* Die Job-Ausführung vor dem Ausfüllen auf einem Edge wurde behoben, wenn dieser mit mehreren Kernen verbunden ist.
+* Optimus UI zeigt jetzt die Liste der verbundenen Kanten auf einem Publisher an, der an der Edge Sync-Funktion beteiligt ist.
+
+
+
+
 == 24. Oktober 2022 (Version 2.1)
 
 * Während der Lizenzkonfiguration wird die GFC-Abonnementnummer zusätzlich validiert.

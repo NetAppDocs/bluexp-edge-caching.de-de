@@ -18,19 +18,19 @@ summary: Über die folgenden Links erhalten Sie weitere Informationen zu Global 
 
 * Häufig gestellte Fragen zum Global File Cache
 +
-** Sehen Sie sich eine Liste mit häufig gestellten Fragen und Antworten an link:https://cloud.netapp.com/global-file-cache-faq["Hier"^]
+** Sehen Sie sich eine Liste mit häufig gestellten Fragen und Antworten an https://bluexp.netapp.com/global-file-cache-faq["Hier"^]
 
 
-* https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.1.0%20User%20Guide.pdf["NetApp Global File Cache User Guide"^]
+* https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.2.0%20User%20Guide.pdf["Benutzerhandbuch Für Global File Cache"^]
 * NetApp Produktdokumentation
 +
 ** Siehe zusätzliche Dokumentation für NetApp Cloud-Produkte https://docs.netapp.com/us-en/cloud/["Hier"^]
-** Siehe zusätzliche Dokumentation für alle NetApp Produkte https://docs.netapp.com["Hier"^]
+** Siehe zusätzliche Dokumentation für alle NetApp Produkte https://www.netapp.com/support-and-training/documentation/["Hier"^]
 
 
 * Kunden-Support für Global File Cache-Benutzer mit Cloud Volumes ONTAP steht über folgende Kanäle zur Verfügung:
 +
-** Geführte Problemlösung, Case-Management, Knowledgebase, Downloads, Tools, Und weitere gehen link:https://cloud.netapp.com/gfc-support["Hier"^]
+** Geführte Problemlösung, Case-Management, Knowledgebase, Downloads, Tools, Und weitere gehen https://bluexp.netapp.com/gfc-support["Hier"^]
 ** Melden Sie sich beim NetApp Support unter an https://mysupport.netapp.com[] Mit Ihren NSS-Anmeldedaten
 ** Sofortige Unterstützung für P1-Fehler: +1 856.481.3990 (Option 2)
 
