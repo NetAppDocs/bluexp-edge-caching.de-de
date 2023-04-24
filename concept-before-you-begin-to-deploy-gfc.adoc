@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept-before-you-begin-to-deploy-gfc.html 
 keywords: global file cache, core, edge, management server 
-summary: Bevor Sie Global File Cache in der Cloud und an Ihren Remote-Standorten implementieren, müssen Sie zahlreiche Anforderungen beachten. 
+summary: Bevor Sie mit der Implementierung von BlueXP Edge-Caching in der Cloud und an Ihren Remote-Standorten beginnen, müssen Sie viele Anforderungen beachten. 
 ---
-= Bevor Sie mit der Bereitstellung von Global File Cache beginnen
+= Bevor Sie mit der Implementierung von BlueXP Edge-Caching beginnen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,23 +14,23 @@ summary: Bevor Sie Global File Cache in der Cloud und an Ihren Remote-Standorten
 
 
 [role="lead"]
-Bevor Sie Global File Cache in der Cloud und an Ihren Remote-Standorten implementieren, müssen Sie zahlreiche Anforderungen beachten.
+Bevor Sie mit der Implementierung von BlueXP Edge-Caching in der Cloud und an Ihren Remote-Standorten beginnen, müssen Sie viele Anforderungen beachten.
 
 
 
-== Überlegungen zum Design von Global File Cache Core
+== Überlegungen zum Edge-Caching mit BlueXP Kerndesign
 
-Je nach Ihren Anforderungen müssen Sie möglicherweise eine oder mehrere Global File Cache Core-Instanzen bereitstellen, um die Global File Cache Fabric zu erstellen. Die Kerninstanz dient als Traffic COP zwischen Ihren verteilten Global File Cache Edge Instanzen und den File Server-Ressourcen im Datacenter, beispielsweise File Shares, Ordner und Dateien.
+Je nach Anforderungen müssen Sie möglicherweise eine oder mehrere Core-Instanzen von BlueXP Edge Caching implementieren, um die BlueXP Edge Caching Fabric zu erstellen. Die Core-Instanz wurde entwickelt, um den Datenfluss zwischen Ihren verteilten Edge-Caching-Edge-Instanzen von BlueXP und den Fileserverressourcen im Datacenter zu lenken, beispielsweise Dateifreigaben, Ordner und Dateien.
 
-Beim Design der Global File Cache Implementierung müssen Sie herausfinden, welche Lösung sich für Ihre Umgebung im Hinblick auf Skalierung, Verfügbarkeit von Ressourcen und Redundanz am besten eignet. Global File Cache Core kann auf folgende Weise implementiert werden:
+Wenn Sie Ihre BlueXP Edge Caching-Implementierung entwerfen, müssen Sie ermitteln, was bezüglich Skalierbarkeit, Verfügbarkeit von Ressourcen und Redundanz auf Ihre Umgebung am besten geeignet ist. Der Edge Caching Core von BlueXP kann wie folgt implementiert werden:
 
-* GFC Core Standalone-Instanz
-* GFC Core Load Distributed-Design (Cold Standby)
+* Eigenständige Instanz
+* Lastverteiltes Design (Cold Standby)
 
 
 Siehe <<Richtlinien für die Dimensionierung>> So ermitteln Sie die maximale Anzahl an Edge-Instanzen und die Gesamtanzahl der Benutzer, die jede Konfiguration unterstützen kann:
 
-Wenden Sie sich an Ihren Global File Cache Solutions Engineer, um die besten Optionen für die Implementierung in Ihrem Unternehmen zu besprechen.
+Wenden Sie sich an Ihren NetApp Solutions Engineer, um mehr über die besten Optionen für Ihre Implementierung in einem Unternehmen zu erfahren.
 
 
 
@@ -38,50 +38,50 @@ Wenden Sie sich an Ihren Global File Cache Solutions Engineer, um die besten Opt
 
 Bei der Konfiguration des ersten Systems sind einige Richtlinien zur Dimensionierung zu beachten. Sie sollten diese Verhältnisse noch einmal überprüfen, nachdem sich einige Verwendungsdaten angesammelt haben, um sicherzustellen, dass Sie das System optimal nutzen. Dazu zählen:
 
-* Global File Cache-Kanten/Core-Verhältnis
-* Verhältnis von verteilten Benutzern/Global File Cache Edge
-* Dezentrale Benutzer/Global File Cache Core Ratio
+* Verhältnis Kanten/Kern
+* Verteiltes Benutzer-/Edge-Verhältnis
+* Verhältnis verteilter Benutzer/Kern
 
 
 
 
 === Anzahl der Edge-Instanzen pro Core-Instanz
 
-Unsere Richtlinien empfehlen bis zu 10 Edge-Instanzen pro Global File Cache Core-Instanz mit maximal 20 Rändern pro Global File Cache Core-Instanz. Dies hängt stark vom Typ und der mittleren Dateigröße des am häufigsten verwendeten Workloads ab. In einigen Fällen können Sie mit den häufigsten Workloads weitere Edge-Instanzen pro Kern hinzufügen. In diesen Fällen sollten Sie sich jedoch an Ihren Account-Vertreter wenden, um zu ermitteln, wie die Anzahl der Edge- und Core-Instanzen in Abhängigkeit von den Typen und Größen der Dateidatensätze korrekt angepasst werden kann.
+Unsere Richtlinien empfehlen bis zu 10 Edge-Instanzen pro BlueXP Edge Caching Core-Instanz mit maximal 20 Edge Cache pro BlueXP Core-Instanz. Dies hängt stark vom Typ und der mittleren Dateigröße des am häufigsten verwendeten Workloads ab. In einigen Fällen können Sie mit den häufigsten Workloads weitere Edge-Instanzen pro Kern hinzufügen. In diesen Fällen sollten Sie sich jedoch an Ihren Account-Vertreter wenden, um zu ermitteln, wie die Anzahl der Edge- und Core-Instanzen in Abhängigkeit von den Typen und Größen der Dateidatensätze korrekt angepasst werden kann.
 
 
-NOTE: Sie können mehrere Global File Cache Edge- und Core-Instanzen gleichzeitig nutzen, um Ihre Infrastruktur je nach Anforderungen horizontal zu skalieren.
+NOTE: Mehrere Edge Caching Edge- und Core-Instanzen von BlueXP können gleichzeitig genutzt werden, um die Infrastruktur je nach Anforderungen horizontal zu skalieren.
 
 
 
 === Anzahl gleichzeitiger Benutzer pro Edge Instanz
 
-Global File Cache Edge bewältigt die Schwerarbeit hinsichtlich Caching-Algorithmen und Unterschieden auf Dateiebene. Eine einzige globale File Cache Edge Instanz kann bis zu 500 Benutzer pro dedizierter physischer Edge Instanz sowie bis zu 300 Benutzer für dedizierte virtuelle Bereitstellungen bereitstellen. Dies hängt stark vom Typ und der mittleren Dateigröße des am häufigsten verwendeten Workloads ab. Bei größeren Dateitypen für die Zusammenarbeit können Sie angeben, dass 50 % der maximalen Benutzer pro Global File Cache Edge untere Grenze (je nach physischer oder virtueller Bereitstellung) vorliegen. Für häufiger Office-Objekte mit einer mittleren Dateigröße von <1 MB, Leitfaden zu den 100 % Benutzern pro Global File Cache Edge Obergrenze (je nach physischer oder virtueller Bereitstellung).
+Das Edge Caching von BlueXP Edge bewältigt die Schwerarbeit hinsichtlich Caching-Algorithmen und Unterschiede auf Dateiebene. Eine einzelne Edge-Instanz kann bis zu 500 Benutzer pro dedizierte _physische_ Edge-Instanz und bis zu 300 Benutzer für dedizierte _virtuelle_ Bereitstellungen bedienen. Dies hängt stark vom Typ und der mittleren Dateigröße des am häufigsten verwendeten Workloads ab. Führen Sie bei größeren Dateitypen für Zusammenarbeit bis zu 50 % der maximalen Benutzeranzahl pro BlueXP Edge-Caching Edge-Grenze unter der Grenze (je nach physischer oder virtueller Implementierung) durch. Bei allgemeineren Office-Elementen mit einer mittleren Dateigröße von <1 MB führen Sie zu den 100 %-Benutzern pro Edge-Obergrenze (je nach physischer oder virtueller Bereitstellung).
 
 
-NOTE: Global File Cache Edge erkennt, ob er auf einer virtuellen oder physischen Instanz ausgeführt wird, und beschränkt die Anzahl der SMB-Verbindungen auf die lokale virtuelle Dateifreigabe auf maximal 300 oder 500 gleichzeitige Verbindungen.
+NOTE: Das Edge Caching von BlueXP erkennt, ob es auf einer virtuellen oder physischen Instanz ausgeführt wird, und begrenzt die Anzahl der SMB-Verbindungen auf die lokale virtuelle Dateifreigabe auf maximal 300 oder 500 gleichzeitige Verbindungen.
 
 
 
 === Anzahl gleichzeitiger Benutzer pro Core-Instanz
 
-Die Global File Cache Core Instanz ist äußerst skalierbar und hat eine empfohlene gleichzeitige Benutzeranzahl von 3,000 Benutzern pro Core. Dies hängt stark vom Typ und der mittleren Dateigröße des am häufigsten verwendeten Workloads ab.
+Die Edge Caching Core-Instanz von BlueXP ist äußerst skalierbar und bietet eine empfohlene Anzahl an gleichzeitigen Benutzern von 3,000 Benutzern pro Core. Dies hängt stark vom Typ und der mittleren Dateigröße des am häufigsten verwendeten Workloads ab.
 
-Wenden Sie sich an Ihren Global File Cache Solutions Engineer, um die besten Optionen für die Implementierung in Ihrem Unternehmen zu besprechen.
+Wenden Sie sich an Ihren NetApp Solutions Engineer, um mehr über die besten Optionen für Ihre Implementierung in einem Unternehmen zu erfahren.
 
 
 
 == Voraussetzungen
 
-Die in diesem Abschnitt beschriebenen Voraussetzungen gelten für die in der Cloud installierten Komponenten: Den Global File Cache Management Server und den Global File Cache Core.
+Die in diesem Abschnitt beschriebenen Voraussetzungen gelten für die in der Cloud installierten Komponenten: Den BlueXP Edge Caching Management Server und den BlueXP Edge Caching Core.
 
-Die Voraussetzungen für Global File Cache Edge werden beschrieben link:download-gfc-resources.html#global-file-cache-edge-requirements["Hier"].
+Voraussetzungen für das Edge Caching von BlueXP sind unter folgendem Link beschrieben: Download-gfc-Resources.HTML#bluexp-Edge Caching-Edge-Anforderungen[hier].
 
 
 
 === Storage-Plattform (Volumes)
 
-Die Back-End-Storage-Plattform – in diesem Fall sollte Ihre implementierte Cloud Volumes ONTAP-Instanz SMB-Dateifreigaben bereitstellen. Alle Freigaben, die durch den globalen Dateicache freigelegt werden, müssen der Gruppe „Alle“ die volle Kontrolle auf Share-Ebene ermöglichen, während sie die Berechtigungen durch NTFS-Berechtigungen einschränken.
+Die Back-End-Storage-Plattform – in diesem Fall sollte Ihre implementierte Cloud Volumes ONTAP-Instanz SMB-Dateifreigaben bereitstellen. Alle Freigaben, die durch BlueXP Edge-Caching offengelegt werden, müssen der Gruppe „Alle“ vollständige Kontrolle auf Share-Ebene ermöglichen und gleichzeitig die Berechtigungen durch NTFS-Berechtigungen einschränken.
 
 Wenn Sie auf der Cloud Volumes ONTAP Instanz nicht mindestens eine SMB-Dateifreigabe eingerichtet haben, müssen Sie die folgenden Informationen bereithalten, damit Sie diese Informationen während der Installation konfigurieren können:
 
@@ -93,9 +93,9 @@ Wir empfehlen, das Volume so groß wie das gesamte Datenset für die Applikation
 
 
 
-=== Global File Cache Management Server
+=== BlueXP Edge Caching Management Server
 
-Dieser Global File Cache Management Server erfordert externen Zugriff über HTTPS (TCP Port 443), um eine Verbindung zum Abonnementdienst des Cloud-Providers herzustellen und auf diese URLs zuzugreifen:
+Der BlueXP Edge Caching Management Server erfordert einen externen Zugriff über HTTPS (TCP Port 443), um eine Verbindung zum Abonnementservice des Cloud-Providers herzustellen und auf diese URLs zuzugreifen:
 
 * \https://gfcproxyforcm-prod.azurewebsites.net/
 * \https://rest.zuora.com/v1/subscriptions/
@@ -104,29 +104,29 @@ Dieser Global File Cache Management Server erfordert externen Zugriff über HTTP
 * \https://talonlicensing.table.core.windows.net
 
 
-Dieser Port muss von allen WAN-Optimierungsgeräten oder Firewall-Restriktionsrichtlinien ausgeschlossen werden, damit die Global File Cache-Software ordnungsgemäß funktioniert.
+Damit dieser Port ordnungsgemäß funktioniert, müssen keine WAN-Optimierungsgeräte oder Richtlinien für Firewall-Einschränkungen für die BlueXP Edge Caching-Software beachtet werden.
 
-Der Global File Cache Management Server benötigt für die Instanz außerdem einen eindeutigen (geografischen) NetBIOS-Namen (wie z. B. GFC-MS1).
-
-
-NOTE: Ein Management-Server kann mehrere globale File Cache Core-Instanzen unterstützen, die in verschiedenen Arbeitsumgebungen implementiert werden. Bei der Implementierung über BlueXP verfügt jede Arbeitsumgebung über einen eigenen, separaten Backend-Storage und enthält keine Daten.
+Der BlueXP Edge Caching Management Server erfordert außerdem einen eindeutigen (geografischen) NetBIOS-Namen für die Instanz (z. B. GFC-MS1).
 
 
+NOTE: Ein Management Server kann mehrere BlueXP Edge Caching Core-Instanzen unterstützen, die in verschiedenen Arbeitsumgebungen implementiert werden. Bei der Implementierung über BlueXP verfügt jede Arbeitsumgebung über einen eigenen, separaten Backend-Storage und enthält keine Daten.
 
-=== Globaler File Cache-Kern
 
-Dieser Global File Cache Core wartet auf TCP-Port-Bereich 6618-6630. Je nach Ihrer Firewall- oder NSG-Konfiguration müssen Sie möglicherweise den Zugriff auf diese Ports über Inbound Port Rules ausdrücklich zulassen. Darüber hinaus müssen diese Ports von allen WAN-Optimierungsgeräten oder Firewallbeschränkungen-Richtlinien ausgeschlossen werden, damit die Global File Cache Software ordnungsgemäß funktioniert.
 
-Die zentralen Anforderungen an Global File Cache sind:
+=== BlueXP Edge Caching Core
+
+Der BlueXP Edge Caching Core hört auf den TCP-Portbereich 6618-6630. Je nach Ihrer Firewall- oder NSG-Konfiguration müssen Sie möglicherweise den Zugriff auf diese Ports über Inbound Port Rules ausdrücklich zulassen. Zudem müssen diese Ports von WAN-Optimierungs-Geräten und von Firewall-Restriktionen ausgeschlossen werden, damit die Edge Caching Software von BlueXP ordnungsgemäß funktioniert.
+
+Die Hauptanforderungen von BlueXP Edge-Caching sind:
 
 * Ein eindeutiger (geografischer) NetBIOS-Name für die Instanz (z. B. GFC-CORE1)
 * Active Directory-Domänenname
 +
-** Global File Cache-Instanzen sollten mit Ihrer Active Directory-Domäne verbunden werden.
-** Global File Cache-Instanzen sollten in einer OU (Global File Cache Specific Organizational Unit) verwaltet und von den übernommenen Gruppenrichtlinienobjekten des Unternehmens ausgeschlossen werden.
+** Instanzen sollten Ihrer Active Directory-Domäne hinzugefügt werden.
+** Instanzen sollten in einer BlueXP Edge Caching Specific Organizational Unit (OU) gemanagt und von vererbten Unternehmens-GPOs ausgeschlossen werden.
 
 
-* Servicekonto. Die Dienste auf diesem Global File Cache Core werden als ein spezifisches Domain-Benutzerkonto ausgeführt. Dieses Konto, auch als Dienstkonto bezeichnet, muss für jeden der SMB-Server über die folgenden Berechtigungen verfügen, die mit der Global File Cache Core-Instanz verknüpft werden:
+* Servicekonto. Die Dienste auf dem Core werden als ein bestimmtes Domain-Benutzerkonto ausgeführt. Dieses Konto, auch als Servicekonto bezeichnet, muss auf jedem der SMB-Server, der mit der Core-Instanz von BlueXP Edge Caching verknüpft wird, die folgenden Berechtigungen besitzen:
 +
 ** Das bereitgestellte Servicekonto muss ein Domänenbenutzer sein.
 +
@@ -144,8 +144,8 @@ Abhängig von den Einschränkungen und GPOs in der Netzwerkumgebung kann für di
 
 === Lizenzverwaltungsserver
 
-* Der Global File Cache License Management Server (LMS) sollte auf einem Microsoft Windows Server 2016 Standard oder Datacenter Edition oder Windows Server 2019 Standard oder Datacenter Edition konfiguriert werden, vorzugsweise auf der Global File Cache Core Instanz im Datacenter oder in der Cloud.
-* Wenn Sie eine separate LMS-Instanz für Global File Cache benötigen, müssen Sie das neueste Installationspaket für Global File Cache auf einer makellosen Microsoft Windows Server-Instanz installieren.
+* Der BlueXP Edge Caching License Management Server (LMS) sollte auf einer Microsoft Windows Server 2016 Standard oder Datacenter Edition oder Windows Server 2019 Standard oder Datacenter Edition konfiguriert werden, vorzugsweise auf der BlueXP Edge Caching Core Instanz im Rechenzentrum oder in der Cloud.
+* Wenn Sie eine separate BlueXP Edge Caching-LMS-Instanz benötigen, müssen Sie das neueste Installationspaket für die Edge-Caching-Software von BlueXP auf einer ursprünglichen Microsoft Windows Server-Instanz installieren.
 * Die LMS-Instanz muss eine Verbindung zum Abonnementdienst (öffentliches Internet) über HTTPS (TCP-Port 443) herstellen können.
 * Die Core- und Edge-Instanzen müssen über HTTPS (TCP-Port 443) eine Verbindung zur LMS-Instanz herstellen.
 
@@ -154,7 +154,7 @@ Abhängig von den Einschränkungen und GPOs in der Netzwerkumgebung kann für di
 
 === Networking (Externer Zugriff)
 
-Für den Global File Cache LMS ist ein externer Zugriff über HTTPS (TCP-Port 443) auf die folgenden URLs erforderlich.
+Das BlueXP Edge-Caching-LMS erfordert externen Zugriff über HTTPS (TCP Port 443) auf die folgenden URLs.
 
 * Bei Nutzung der abonnementbasierten GFC-Lizenzierung:
 +
@@ -181,7 +181,7 @@ Für den Global File Cache LMS ist ein externer Zugriff über HTTPS (TCP-Port 44
 
 === Netzwerkbetrieb
 
-* Firewall: TCP-Ports sollten zwischen Global File Cache Edge und Core Instanzen erlaubt sein.
-* Global File Cache TCP Ports: 443 (HTTPS), 6618-6630.
-* Netzwerkoptimierungs-Geräte (wie Riverbed Steelhead) müssen so konfiguriert werden, dass sie über die für Global File Cache spezifischen Ports (TCP 6618-6630) weitergeleitet werden.
+* Firewall: TCP-Ports sollten zwischen BlueXP Edge Caching Edge- und Core-Instanzen zulässig sein.
+* BlueXP Edge Caching TCP-Ports: 443 (HTTPS), 6618-6630.
+* Geräte zur Netzwerkoptimierung (wie Riverbed Steelhead) müssen so konfiguriert werden, dass sie BlueXP Edge Caching-spezifische Ports durchlaufen (TCP 6618-6630).
 

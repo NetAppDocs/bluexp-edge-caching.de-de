@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: fixed-issues.html 
 keywords: fixed issues, release notes, fixes, gfc, global file cache 
-summary: Lesen Sie, welche Probleme im globalen Datei-Cache behoben wurden. 
+summary: Sehen Sie sich an, welche Probleme beim BlueXP Edge-Caching behoben wurden. 
 ---
-= Probleme im Global File Cache wurden behoben
+= Behebung von Problemen beim Edge Caching von BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Lesen Sie, welche Probleme im globalen Datei-Cache behoben wurden.
 
 
 [role="lead"]
-Lesen Sie, welche Probleme im globalen Datei-Cache behoben wurden.
+Sehen Sie sich an, welche Probleme beim BlueXP Edge-Caching behoben wurden.
 
 
 

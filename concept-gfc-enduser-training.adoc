@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-gfc-enduser-training.html 
 keywords: global file cache, training 
-summary: Sie sollten Ihre Benutzer auf die Best Practices für den Zugriff auf gemeinsam genutzte Dateien über Global File Cache Schulen. 
+summary: Sie sollten Ihre Benutzer darauf Schulen, welche Best Practices es für den Zugriff auf gemeinsam genutzte Dateien durch BlueXP Edge Caching gibt. 
 ---
 = Endbenutzerschulung
 :hardbreaks:
@@ -14,11 +14,11 @@ summary: Sie sollten Ihre Benutzer auf die Best Practices für den Zugriff auf g
 
 
 [role="lead"]
-Sie sollten Ihre Benutzer auf die Best Practices für den Zugriff auf gemeinsam genutzte Dateien über Global File Cache Schulen.
+Sie sollten Ihre Benutzer darauf Schulen, welche Best Practices es für den Zugriff auf gemeinsam genutzte Dateien durch BlueXP Edge Caching gibt.
 
-Dies ist die letzte Phase der Implementierung des Global File Cache, der Endanwender.
+Dies ist die letzte Phase der BlueXP Edge-Caching-Implementierung, der Implementierungsphase für Endbenutzer.
 
-Um den Onboarding-Prozess für Endbenutzer vorzubereiten und zu optimieren, verwenden Sie die unten stehende E-Mail-Vorlage, mit der Sie die Endbenutzer darüber informieren können, was es bedeutet, in einer „zentralen Data“-Umgebung zu arbeiten. Auf diese Weise können Ihre Benutzer alle Vorteile der Global File Cache-Lösung nutzen. Außerdem haben wir ein Video veröffentlicht, das freigegeben werden kann, um Benutzer bei Bedarf zu „Schulen“.
+Um den Onboarding-Prozess für Endbenutzer vorzubereiten und zu optimieren, verwenden Sie die unten stehende E-Mail-Vorlage, mit der Sie die Endbenutzer darüber informieren können, was es bedeutet, in einer „zentralen Data“-Umgebung zu arbeiten. Auf diese Weise können Ihre Anwender alle Vorteile der Edge Caching-Lösung von BlueXP nutzen. Außerdem haben wir ein Video veröffentlicht, das freigegeben werden kann, um Benutzer bei Bedarf zu „Schulen“.
 
 Anpassen und Weiterleiten folgender Ressourcen an Endbenutzer zur Vorbereitung der Implementierung:
 
