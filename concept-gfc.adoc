@@ -143,7 +143,7 @@ In AWS wird dies auf einer m4.xlarge-Instanz oder einer gleichwertigen (4 vCPU/1
 * Bei der Installation mit Cloud Volumes ONTAP (den vollständig über BlueXP implementierten unterstützten Konfigurationen) gibt es zwei Preisoptionen:
 +
 ** Bei Cloud Volumes ONTAP Systemen zahlen Sie 3.000 US-Dollar für jede Edge Caching-Instanz von BlueXP pro Jahr.
-** Als Alternative können Sie für Cloud Volumes ONTAP Systeme in Azure und GCP das Cloud Volumes ONTAP Edge Cache Paket wählen. Mit dieser kapazitätsbasierten Lizenz können Sie für jede 3 tib erworbene Kapazität eine einzelne BlueXP Edge Caching Edge-Instanz implementieren. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#capacity-based-licensing["Hier erfahren Sie mehr"^].
+** Als Alternative können Sie für Cloud Volumes ONTAP Systeme in Azure und GCP das Cloud Volumes ONTAP Edge Cache Paket wählen. Mit dieser kapazitätsbasierten Lizenz können Sie für jede 3 tib erworbene Kapazität eine einzelne BlueXP Edge Caching Edge-Instanz implementieren. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#capacity-based-licensing["Hier erfahren Sie mehr"^].
 
 
 * Bei der Installation mit den manuellen Bereitstellungsoptionen ist die Preisgestaltung unterschiedlich. Eine allgemeine Einschätzung der Kosten finden Sie unter https://bluexp.netapp.com/global-file-cache/roi["Berechnen Sie Ihr Einsparungspotenzial"^] Oder wenden Sie sich an Ihren NetApp Solutions Engineer, um mehr über die besten Optionen für Ihre Implementierung in einem Unternehmen zu erfahren.

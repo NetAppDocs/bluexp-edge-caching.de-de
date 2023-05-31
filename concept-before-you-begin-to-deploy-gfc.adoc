@@ -89,7 +89,7 @@ Wenn Sie auf der Cloud Volumes ONTAP Instanz nicht mindestens eine SMB-Dateifrei
 * Name und Größe des Volumes, das Sie erstellen möchten, sowie Name des Aggregats, auf dem das Volume erstellt wird, und Share-Name.
 
 
-Wir empfehlen, das Volume so groß wie das gesamte Datenset für die Applikation zu sein, und die Möglichkeit zu einer entsprechend skalierbaren Skalierung bei wachsendem Datensatz. Wenn Sie in der Arbeitsumgebung über mehrere Aggregate verfügen, lesen Sie https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-aggregates.html["Management vorhandener Aggregate"^] Um zu bestimmen, welches Aggregat den meisten verfügbaren Platz für das neue Volume hat.
+Wir empfehlen, das Volume so groß wie das gesamte Datenset für die Applikation zu sein, und die Möglichkeit zu einer entsprechend skalierbaren Skalierung bei wachsendem Datensatz. Wenn Sie in der Arbeitsumgebung über mehrere Aggregate verfügen, lesen Sie https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-aggregates.html["Management vorhandener Aggregate"^] Um zu bestimmen, welches Aggregat den meisten verfügbaren Platz für das neue Volume hat.
 
 
 

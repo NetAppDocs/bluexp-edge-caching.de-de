@@ -20,7 +20,7 @@ Erfahren Sie mehr über die Neuerungen beim Edge-Caching von BlueXP.
 
 == 5. April 2023 (Version 2.2)
 
-Diese Version enthält die unten aufgeführten neuen Funktionen. Außerdem werden die in beschriebenen Probleme behoben https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html["Probleme Wurden Behoben"]. Aktualisierte Softwarepakete finden Sie unter https://docs.netapp.com/us-en/cloud-manager-file-cache/download-gfc-resources.html#download-required-resources["Auf dieser Seite"].
+Diese Version enthält die unten aufgeführten neuen Funktionen. Außerdem werden die in beschriebenen Probleme behoben https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html["Probleme Wurden Behoben"]. Aktualisierte Softwarepakete finden Sie unter https://docs.netapp.com/us-en/bluexp-edge-caching/download-gfc-resources.html#download-required-resources["Auf dieser Seite"].
 
 
 
@@ -28,7 +28,7 @@ Diese Version enthält die unten aufgeführten neuen Funktionen. Außerdem werde
 
 Zur Implementierung eines Cloud Volumes ONTAP Systems in Google Cloud ist eine neue „Edge Cache“ Lizenz verfügbar. Sie können ein Global File Cache Edge System für jeweils 3 tib erworbener Kapazität auf dem Cloud Volumes ONTAP System implementieren.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["Erfahren Sie mehr über das Edge Cache Lizenzpaket."]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#packages["Erfahren Sie mehr über das Edge Cache Lizenzpaket."]
 
 
 
@@ -42,7 +42,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 
 == 24. Oktober 2022 (Version 2.1)
 
-Diese Version enthält die unten aufgeführten neuen Funktionen. Außerdem werden die in beschriebenen Probleme behoben https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html["Probleme Wurden Behoben"].
+Diese Version enthält die unten aufgeführten neuen Funktionen. Außerdem werden die in beschriebenen Probleme behoben https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html["Probleme Wurden Behoben"].
 
 
 
@@ -74,7 +74,7 @@ Eine einzige globale File Cache Edge Instanz kann bis zu 500 Benutzer pro dedizi
 
 == 25. Juli 2022 (Version 2.0)
 
-Diese Version enthält die unten aufgeführten neuen Funktionen. Außerdem werden die in beschriebenen Probleme behoben https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html["Probleme Wurden Behoben"].
+Diese Version enthält die unten aufgeführten neuen Funktionen. Außerdem werden die in beschriebenen Probleme behoben https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html["Probleme Wurden Behoben"].
 
 
 
@@ -82,7 +82,7 @@ Diese Version enthält die unten aufgeführten neuen Funktionen. Außerdem werde
 
 Eine neue Lizenz für „Edge Cache“ verfügt über dieselben Funktionen wie die Lizenz „CVO Professional“, bietet jedoch auch Unterstützung für Global File Cache. Sie sehen diese Option bei der Implementierung eines neuen Cloud Volumes ONTAP Systems in Azure. Sie haben Anspruch auf die Bereitstellung eines globalen File Cache Edge-Systems für jeweils 3 tib bereitgestellte Kapazität auf dem Cloud Volumes ONTAP System. Es sollten mindestens 30 tib bereitgestellt werden. Der GFC License Manager Service wurde erweitert und bietet kapazitätsbasierte Lizenzierung.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#capacity-based-licensing["Erfahren Sie mehr über das Edge Cache Lizenzpaket."]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#capacity-based-licensing["Erfahren Sie mehr über das Edge Cache Lizenzpaket."]
 
 
 
@@ -106,13 +106,13 @@ Während der Lizenzkonfiguration sollte der License Management Server (LMS) Zugr
 
 == 23. Juni 2022 (Version 1.3.1)
 
-In dieser Version werden die in beschriebenen Probleme behoben https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html["Probleme Wurden Behoben"].
+In dieser Version werden die in beschriebenen Probleme behoben https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html["Probleme Wurden Behoben"].
 
 
 
 == Mai 19 2022 (Version 1.3.0)
 
-Global File Cache Edge Software für Version 1.3.0 ist unter verfügbar https://docs.netapp.com/us-en/cloud-manager-file-cache/download-gfc-resources.html#download-required-resources["Auf dieser Seite"].
+Global File Cache Edge Software für Version 1.3.0 ist unter verfügbar https://docs.netapp.com/us-en/bluexp-edge-caching/download-gfc-resources.html#download-required-resources["Auf dieser Seite"].
 
 
 
