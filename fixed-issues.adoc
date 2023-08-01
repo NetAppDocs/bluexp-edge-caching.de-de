@@ -18,6 +18,32 @@ Sehen Sie sich an, welche Probleme beim BlueXP Edge-Caching behoben wurden.
 
 
 
+== August 2023 (Version 2.3)
+
+* Die folgenden Fehlerbehebungen für die Optimus Configuration UI wurden vorgenommen:
++
+** Zeigt aussagekräftige Informationen für Fehler anstelle von Ausnahmezeichenfolgen an.
+** Zeigt das Ablaufdatum der Lizenz korrekt an und nicht die Standardwerte.
+** Zeigt die Felder für Benutzername/Passwort korrekt an, wenn SSL in der Benutzeroberfläche aktiviert ist.
+** Reagiert nicht mehr, wenn ein nicht erreichbarer GFC-Core auf der Registerkarte Optimus UI Edge Configuration konfiguriert ist.
+** Ermöglicht die Auswahl mehrerer Cache-/Kantennamen aus der Dropdown-Liste Kante.
+
+
+* Die Informationen zur Lizenzübersicht werden korrekt angezeigt, während abgelaufene und nicht abgelaufene Lizenzen angezeigt werden.
+* Der TappN-Dienst wurde behoben, um nur dann neu zu starten, wenn die Konfiguration erfolgreich aktualisiert wurde.
+* Im Assistenten zum ersten Mal wurde eine Schaltfläche zum Aktualisieren hinzugefügt, um die Kantenanzahl anzuzeigen.
+* SSL-Informationen werden jetzt auf der Übersichtsseite des erstmaligen Assistenten angezeigt.
+* Infrastruktur in TUM hinzugefügt, um minidump-Timeouts zu konfigurieren und einen minidump korrekt auszuführen.
+* Optimus und der Assistent zum ersten Mal zeigen die entsprechende Lizenzanzahl an und zeigen eine Ausnahme an, wenn die Lizenzanzahl Null ist.
+* Optimus PSM zeigt jetzt eine entsprechende Fehlermeldung an, wenn der eingegebene Edge-Servername leer ist.
+* Es wurde ein Problem behoben, bei dem Jobs vor der Einfüllung nicht korrekt auf mehrere Cachenamen in Optimus PSM angewendet werden.
+* Die Lizenz-Manager-Konfiguration wurde verbessert, um harte Fehler anstelle von weichen Fehlern anzuzeigen.
+* Die Zoura-Registrierungs-UI zeigt einen Fehler an, wenn sie bereits konfiguriert ist.
+* Optimus UI und Optimus PSM zeigen nun CPU- und Speicheranforderungen von 8 CPU bzw. 32 GB RAM an.
+
+
+
+
 == 27. März 2023 (Version 2.2)
 
 * Es wurde ein Problem beim Konvertieren des Zeitformats für die Ausführung eines Jobs vor der Einfüllung für die Option „letzte Änderungszeit“ behoben.
@@ -75,16 +101,4 @@ Sehen Sie sich an, welche Probleme beim BlueXP Edge-Caching behoben wurden.
 * Der TappN-Vorbefüllung Dienst wird aktualisiert, um abzurufende Dateien zu überspringen, wenn freier Cache-Speicherplatz unter den unteren Schwellenwert fällt.
 * Beim Schreiben eines Trace-Protokolls wurde ein Problem im License Manager Server Service (LMS) behoben.
 * Die Protokollierungsinfrastruktur für die TUM wird mit hoher Performance besser skalierbar.
-
-
-
-
-== 17. Dezember 2021 (Version 1.2.0)
-
-* Die Konfigurations-UI (Optimus) wird erweitert, um die Datumsfeldeinträge zu validieren, während Aufgaben vor der Population hinzugefügt werden.
-* Die Vorbelegung wird verbessert, um die Cache-Auslastung zu überwachen, und das Befüllen wird übersprungen, wenn die Cache-Nutzung fast zu den Parametern für den Cache Cleaner führt.
-* Die harte Abhängigkeit des LMS-Dienstes (License Management Server), der lokal mit der Richtlinienkonfiguration ausgeführt wird, wurde entfernt.
-* Der GFC-Kernel-Treiber wurde erweitert, um einen Absturz des SMB-Serverdienstes in Windows Server 2016/2019 zu vermeiden.
-* Eine Ausnahme im LMS-Service wurde behoben.
-* Die Start-Typen für den License Manager Server Service (LMS), den License Manager Client Service (LMC) und den Pre-Population Service (TappN) werden von „Automatic Delayed“ auf „Automatic“ geändert.
 

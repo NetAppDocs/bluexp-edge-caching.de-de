@@ -21,7 +21,7 @@ Unter den folgenden Links erhalten Sie weitere Informationen zu BlueXP Edge Cach
 ** Sehen Sie sich eine Liste mit häufig gestellten Fragen und Antworten an https://bluexp.netapp.com/global-file-cache-faq["Hier"^]
 
 
-* https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.2.0%20User%20Guide.pdf["Benutzerhandbuch Für Global File Cache"^]
+* https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.3.0%20User%20Guide.pdf["Benutzerhandbuch Für Global File Cache"^]
 * NetApp Produktdokumentation
 +
 ** Siehe zusätzliche Dokumentation für NetApp Cloud-Produkte https://docs.netapp.com/us-en/cloud/["Hier"^]
