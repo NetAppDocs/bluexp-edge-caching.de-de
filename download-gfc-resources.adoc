@@ -95,8 +95,8 @@ Das BlueXP Edge Caching Installationspaket erstellt eine robuste Software-Applia
 
 === Physische Hardwareanforderungen
 
-* Mindestens 4 CPU-Kerne
-* Mindestens 16 GB RAM
+* Mindestens 8 CPU-Kerne
+* Mindestens 32 GB RAM
 * Dedizierte Single- oder redundante 1-Gbit/s-NIC
 * SAS-HDD mit 10.000 U/min oder SSD (bevorzugt)
 * RAID-Controller mit Write-Back-Cache-Funktion aktiviert
@@ -112,15 +112,15 @@ Zusätzlich zu den physischen Host-Anforderungen müssen für eine optimale Perf
 
 Microsoft Hyper-V 2012 R2 und höher:
 
-* Prozessor (CPU): CPUs müssen als *statisch* gesetzt werden: Minimum: 4 vCPU Cores.
-* Arbeitsspeicher (RAM): Mindestens 16 GB als *statisch* eingestellt.
+* Prozessor (CPU): CPUs müssen als *statisch* eingestellt werden: Mindestens 8 vCPU-Kerne.
+* Arbeitsspeicher (RAM): Mindestens 32 GB als *statisch* eingestellt.
 * Festplattenbereitstellung: Festplatten müssen als *feste Festplatte* konfiguriert werden.
 
 
 VMware vSphere 6.x und höher:
 
-* Prozessor (CPU): Die Reservierung der CPU-Zyklen muss festgelegt werden. Minimum: 4 vCPU Cores @ 10000 MHz.
-* Speicher (RAM): Minimum: Reservierung von 16 GB.
+* Prozessor (CPU): Die Reservierung der CPU-Zyklen muss festgelegt werden. Minimum: 8 vCPU Cores @ 10000 MHz.
+* Arbeitsspeicher (RAM): Minimum: Reservierung von 32 GB.
 * Bereitstellung von Festplatten:
 +
 ** Disk Provisioning muss als *Thick Provisioning Eager Zeroed* eingerichtet werden.
