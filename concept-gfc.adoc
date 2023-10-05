@@ -131,12 +131,18 @@ In Azure wird dies auf einer D2S_V3-VM oder einer gleichwertigen (2 vCPU/8 GB RA
 +
 In AWS wird dies auf einer m4.Large oder einer gleichwertigen Instanz (2 vCPU/8 GB RAM) mit 127 GB Allzweck-SSD ausgeführt
 
++
+In Google Cloud wird dies auf einer n2-Standard-2-Instanz oder einer äquivalenten Instanz (2 vCPU/8 GB RAM) mit 127 GB Allzweck-SSD ausgeführt
+
 ** BlueXP Edge-Caching Core:
 +
-In Azure läuft dies auf einer D4s_V3 VM oder einer gleichwertigen (4 vCPU/16 GB RAM) mit 127 GB Premium SSD
+In Azure wird dies auf einer D8S_V4 oder einer äquivalenten VM (8 vCPU/32 GB RAM) mit 127-GB-Premium-SSD ausgeführt
 
 +
-In AWS wird dies auf einer m4.xlarge-Instanz oder einer gleichwertigen (4 vCPU/16 GB RAM) mit 127 GB Allzweck-SSD ausgeführt
+In AWS wird dies auf einer m4.2xlarge- oder äquivalenten Instanz (8 vCPU/32 GB RAM) mit 127 GB AllzweckSSD ausgeführt
+
++
+In Google Cloud wird dies auf einer n2-Standard-8-Instanz oder einer äquivalenten Instanz (8 vCPU/32 GB RAM) mit 127 GB Allzweck-SSD ausgeführt
 
 
 

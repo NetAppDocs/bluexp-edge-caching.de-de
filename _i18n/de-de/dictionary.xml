@@ -246,8 +246,6 @@
   <block id="e5624fb8b348be8b0b94ecdc79a3e52a" category="list-text">Bei allen Installationen müssen Sie zudem zwei oder mehr Virtual Machines (VMs) in der Cloud implementieren. Daraus entstehen Gebühren vom ausgewählten Cloud-Provider.</block>
   <block id="bca1fbce4a3bdcddfdb1aa5bb1b5f6da" category="paragraph">In Azure wird dies auf einer D2S_V3-VM oder einer gleichwertigen (2 vCPU/8 GB RAM) mit 127 GB Standard-SSD ausgeführt</block>
   <block id="c6b798b0bebd4b2ec1cf891e6cd66c67" category="paragraph">In AWS wird dies auf einer m4.Large oder einer gleichwertigen Instanz (2 vCPU/8 GB RAM) mit 127 GB Allzweck-SSD ausgeführt</block>
-  <block id="817000ba632406cdb4b5a4da3a5c5221" category="paragraph">In Azure läuft dies auf einer D4s_V3 VM oder einer gleichwertigen (4 vCPU/16 GB RAM) mit 127 GB Premium SSD</block>
-  <block id="6869983628ce136a6778d9ced07d3b4b" category="paragraph">In AWS wird dies auf einer m4.xlarge-Instanz oder einer gleichwertigen (4 vCPU/16 GB RAM) mit 127 GB Allzweck-SSD ausgeführt</block>
   <block id="ec9614a46239aa59499c4a94e919963a" category="inline-link">Hier erfahren Sie mehr</block>
   <block id="d2893970aa4c57a02af5ca132a872653" category="inline-link">Berechnen Sie Ihr Einsparungspotenzial</block>
   <block id="0b9c6eef4e3d3a222eb04e910d252339" category="section-title">Lizenzierung</block>
@@ -369,7 +367,6 @@
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP-Blog</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Cloud-Webinare</block>
   <block id="4c7d5d7dfde4a7bd82b54348182043d3" category="sidebar">Andere Ressourcen</block>
-  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">Alle BlueXP-Dokumentationen</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">Eins</block>
   <block id="bb28d23fa130988b09464a6057aef85b" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Implementieren Sie Cloud Volumes ONTAP</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">Zwei</block>
@@ -769,4 +766,8 @@
   <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">Unterstützung für Fileservices von Cloud-Providern</block>
   <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">Technischen Support zu Fileservices von Cloud-Providern, zu seiner Infrastruktur oder zu beliebigen Lösungen, die den Service verwenden, finden Sie im Abschnitt „Hilfe erhalten“ in der BlueXP Dokumentation zu diesem Produkt.</block>
   <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">Wenn Sie technischen Support für BlueXP und seine Storage-Lösungen und -Services erhalten möchten, nutzen Sie die unten beschriebenen Support-Optionen.</block>
+  <block id="97928a9e688f12c514398167899b0948" category="paragraph">In Google Cloud wird dies auf einer n2-Standard-2-Instanz oder einer äquivalenten Instanz (2 vCPU/8 GB RAM) mit 127 GB Allzweck-SSD ausgeführt</block>
+  <block id="37224270f6fe9a8b986d9aebd0580f24" category="paragraph">In Azure wird dies auf einer D8S_V4 oder einer äquivalenten VM (8 vCPU/32 GB RAM) mit 127-GB-Premium-SSD ausgeführt</block>
+  <block id="de3597f52173f419dfcb5b6093c8f91b" category="paragraph">In AWS wird dies auf einer m4.2xlarge- oder äquivalenten Instanz (8 vCPU/32 GB RAM) mit 127 GB AllzweckSSD ausgeführt</block>
+  <block id="13a8d1c98f73a6d8e45079d3d40dd107" category="paragraph">In Google Cloud wird dies auf einer n2-Standard-8-Instanz oder einer äquivalenten Instanz (8 vCPU/32 GB RAM) mit 127 GB Allzweck-SSD ausgeführt</block>
 </blocks>
