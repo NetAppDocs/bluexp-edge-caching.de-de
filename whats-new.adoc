@@ -18,6 +18,12 @@ Erfahren Sie mehr über die Neuerungen beim Edge-Caching von BlueXP.
 
 
 
+== 6. Mai 2024 (Version 2.4)
+
+Diese Version behebt einige kleinere Probleme. Das aktualisierte Softwarepaket ist unter verfügbar https://docs.netapp.com/us-en/bluexp-edge-caching/download-gfc-resources.html#download-required-resources["Auf dieser Seite"].
+
+
+
 == August 2023 (Version 2.3)
 
 In dieser Version werden die in beschriebenen Probleme behoben https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html["Probleme Wurden Behoben"]. Aktualisierte Softwarepakete finden Sie unter https://docs.netapp.com/us-en/bluexp-edge-caching/download-gfc-resources.html#download-required-resources["Auf dieser Seite"].
